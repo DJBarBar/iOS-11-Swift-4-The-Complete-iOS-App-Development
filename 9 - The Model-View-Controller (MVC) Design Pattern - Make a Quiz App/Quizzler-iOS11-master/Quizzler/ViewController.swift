@@ -98,6 +98,8 @@ class ViewController: UIViewController {
         
         questionNumber = 0
         nextQuestion()
+        score = 0
+        scoreLabel.text = "Score: \(score)"
         
     }
     
