@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Auto_Layout_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bt5-fm-O7x" userLabel="Top Container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artBoard" translatesAutoresizingMaskIntoConstraints="NO" id="zFP-HD-nH4">
+                                        <rect key="frame" x="137.5" y="117" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="e2q-WE-Bpm"/>
+                                            <constraint firstAttribute="width" constant="100" id="wpg-cY-281"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zFP-HD-nH4" firstAttribute="centerX" secondItem="Bt5-fm-O7x" secondAttribute="centerX" id="jT7-hT-0yl"/>
+                                    <constraint firstItem="zFP-HD-nH4" firstAttribute="centerY" secondItem="Bt5-fm-O7x" secondAttribute="centerY" id="nnF-JN-nMh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMS-LV-mLI" userLabel="Bottom Container">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notebook" translatesAutoresizingMaskIntoConstraints="NO" id="KC5-jk-Nhk">
+                                        <rect key="frame" x="137.5" y="117" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="XvG-pU-99H"/>
+                                            <constraint firstAttribute="width" constant="100" id="kN5-bl-2iW"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KC5-jk-Nhk" firstAttribute="centerX" secondItem="YMS-LV-mLI" secondAttribute="centerX" id="1uY-kA-GRg"/>
+                                    <constraint firstItem="KC5-jk-Nhk" firstAttribute="centerY" secondItem="YMS-LV-mLI" secondAttribute="centerY" id="Xay-DK-bBT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YMS-LV-mLI" firstAttribute="top" secondItem="Bt5-fm-O7x" secondAttribute="bottom" id="JcL-Bs-yPN"/>
+                            <constraint firstItem="YMS-LV-mLI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QC6-oP-7mY"/>
+                            <constraint firstItem="YMS-LV-mLI" firstAttribute="top" secondItem="Bt5-fm-O7x" secondAttribute="bottom" id="Wt8-Ae-8IU"/>
+                            <constraint firstItem="Bt5-fm-O7x" firstAttribute="height" secondItem="YMS-LV-mLI" secondAttribute="height" id="g7a-S8-57w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YMS-LV-mLI" secondAttribute="bottom" id="kzu-Nz-PgJ"/>
+                            <constraint firstItem="Bt5-fm-O7x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lNB-87-2Tb"/>
+                            <constraint firstAttribute="trailing" secondItem="YMS-LV-mLI" secondAttribute="trailing" id="mOW-wF-Vyh"/>
+                            <constraint firstItem="Bt5-fm-O7x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nvF-IC-VFY"/>
+                            <constraint firstAttribute="trailing" secondItem="Bt5-fm-O7x" secondAttribute="trailing" id="xUG-iu-7ru"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="artBoard" width="415.67999267578125" height="511.67999267578125"/>
+        <image name="notebook" width="358.55999755859375" height="505.92001342773438"/>
+    </resources>
+</document>
