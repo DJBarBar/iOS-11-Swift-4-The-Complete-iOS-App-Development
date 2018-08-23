@@ -15,11 +15,27 @@ enum CarType {
     case Hatchback
     
 }
+
+class Car {
     
-    class Car {
+    var color = "Black"
+    var numberOfSeats = 5
+    var typeOfCar : CarType = .Coupe
+    
+    
+    init() {
         
-        var color = "Black"
-        var numberOfSeats = 5
-        var typeOfCar : CarType = .Coupe
+    }
+    
+    convenience init(customerChosenColor : String) {
+        self.init()
+        color = customerChosenColor
+    }
+    
+    func drive() {
+        
+        print("Car is moving.")
+    
+    }
     
 }
